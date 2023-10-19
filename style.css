@@ -1,0 +1,214 @@
+body {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  font-family: Avenir,Helvetica,Arial,sans-serif;
+}
+
+button {
+  cursor: pointer;
+}
+
+
+iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+#container {
+  width: 100%;
+  margin: 0 auto;
+  opacity: 0;
+  position: absolute;
+  background-color: #000000;
+  top:418px;
+}
+
+#inner-container {
+  margin: 0 auto;
+  max-width: 1400px;
+}
+
+.row {
+  display: flex;
+  flex: 1 1 auto;
+   background-color: blue;
+}
+
+.card {
+  width: 100%;
+    padding: 12px;
+    margin: 16px;
+    margin-right: 0;
+    background-color: bisque;
+}
+
+
+.card.margin {
+      margin-right: 2%;
+}
+
+.card-title {
+  font-size: 20px;
+}
+
+.description {
+  font-size: 14px;
+  margin-bottom: 16px;
+}
+
+.widget-button {
+  background-color: #00FF00;
+  color: #000000;
+  align-items: center;
+  font-size: 14px;
+  min-height: 37px;
+  text-transform: uppercase;
+      padding: 0 20px;
+    margin-left: 8px;
+}
+
+.hackman {
+  margin: 0 auto;
+  display: flex;
+}
+
+.card-title {
+  font-size: 1.25rem;
+}
+
+.header-container,
+.footer-container {
+    padding: 16px 24px;
+  display: flex;
+    justify-content: space-between;
+}
+
+.header-container {
+  border-bottom: 1px solid rgba(0,0,0,.12);
+}
+
+.no-border {
+  border-bottom: none;
+}
+
+.footer-container {
+  border-top:  1px solid rgba(0,0,0,.12);
+  padding: 8px 24px;
+}
+
+.footer-container button {
+  font-size: 14px;
+  height: 36px;
+  min-width: 64px;
+  padding: 0 16px;
+  font-family: Avenir,Helvetica,Arial,sans-serif;
+  border: none;
+  border-radius: 4px;
+}
+
+.close-button {
+  background-color: transparent;
+  color: #004e7d;
+}
+
+.close-button:hover {
+  background-color: #004e7d1f;
+}
+
+.update-preferences:hover {
+  opacity: 0.95;
+}
+
+.update-preferences {
+  background-color: #004e7d;
+  color: white;
+}
+
+.giveaway-data {
+  font-size: .875rem;
+}
+
+.blink {
+  animation: blinker .2s linear infinite;
+  color: red;
+  font-weight: 900;
+  font-size: 30px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
+.inner-modal-content {
+      display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+        margin: 30px auto;
+}
+
+.subtext {
+  font-size: 20px;
+  text-align: center;
+}
+
+.code {
+      padding: 0.5em;
+    background-color: #f2f2f2;
+}
+
+#giveawaysModal .modal-content,
+#scheduleModal .modal-content {
+  width: 65%!important;
+}
+
+
+/* From https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_modal */
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  transition: .2s cubic-bezier(.25,.8,.25,1),z-index 1ms;
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  border: 1px solid #888;
+  width: 80%;
+  border-radius: 4px;
+  box-shadow: 0 3px 1px -2px rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12);
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
